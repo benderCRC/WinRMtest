@@ -19,8 +19,8 @@ print(ip)
 p = Protocol(
     endpoint='https://' + ip + ':5986/wsman',
     transport='ssl',
-    username='crcadmin',
-    password='p',
+    username='',
+    password='',
     server_cert_validation='ignore')
 shell_id = p.open_shell()
 command_id = p.run_command(shell_id, 'ipconfig', ['/all'])
